@@ -1739,7 +1739,7 @@ async def main():
     except Exception as e: logging.critical(f"Fatal error setup/polling: {e}", exc_info=True)
     finally:
         logging.info("Closing bot session...");
-        if bot and bot.session and not bot.session.closed: await bot.session.close(); logging.info("Bot session closed.")
+        if bot and bot.session: await bot.session.close(); logging.info("Bot session closed.")
         if db: logging.info("Closing database pool..."); await db.close(); logging.info("Database pool closed.")
         logging.info("Bot stopped.")
 
