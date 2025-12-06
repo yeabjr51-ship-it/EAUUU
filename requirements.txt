@@ -1,0 +1,4 @@
+aiogram>=3.0
+asyncpg
+python-dotenv
+# Add any other libraries your bot imports (e.g., html, logging libraries)
