@@ -574,7 +574,7 @@ async def show_privacy(message: types.Message):
         "▪️ Reporting a comment links your User ID to the report for admin review but is not shown publicly.\n"
         f"▪️ All data is stored in a secure database hosted potentially outside your region.\n"
         f"▪️ The bot admin (User ID: <code>{ADMIN_ID}</code>) manages the review process and has access to stored User IDs for moderation and operational purposes.\n\n"
-        f'For more details, please read our full <a href="{}">Privacy Policy</a>.'
+        #f'For more details, please read our full <a href="{}">Privacy Policy</a>.'
     )
     await message.answer(privacy_text, parse_mode=ParseMode.HTML, disable_web_page_preview=True)
 
