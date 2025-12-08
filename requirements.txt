@@ -1,4 +1,6 @@
 aiogram>=3.0
 asyncpg
 python-dotenv
+Flask  # <-- NEW: Required for the minimal web server
+gunicorn # <-- NEW: Required to run the Flask web server in production
 # Add any other libraries your bot imports (e.g., html, logging libraries)
